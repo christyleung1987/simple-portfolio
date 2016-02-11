@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Christy's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <header id="page-header">
+      <h1>Christy Leung</h1>
+    </header>
+    <nav id="page-nav">
+      <ul>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+    <div id="portfolio-pic">
+      <a class="ui icon button huge back-button"><i class="icon arrow circle outline left"></i></a>
+      <div class="ui shape">
+        <div class="sides">
+          <a class="side active" href="https://www.cofounderslab.com/about-matchmaking-for-entrepreneurs"><img src="https://raw.githubusercontent.com/ga-students/wdi-atx-4-class/master/w01/d03/afternoon/student/starter-code/images/startup-matchmaker-deliverable.png?token=AOULvRZek9eySb2yvOv-W23LQ4LcAu_eks5WxT0pwA%3D%3D"></a>
+          <a class="side" href="http://www.calm.com/"><img src="https://raw.githubusercontent.com/ga-students/wdi-atx-4-class/master/w01/d03/afternoon/student/starter-code/images/relaxr-deliverable.png?token=AOULvTgG_cVE3FzFuTrRYmrfjYUw52EFks5WxT0OwA%3D%3D"></a>
+          <a class="side" href="http://www.protutti.com/"><img src="https://raw.githubusercontent.com/ga-students/wdi-atx-4-class/master/w01/d03/afternoon/student/starter-code/images/citipix-deliverable.png?token=AOULvU6k0Xf8aQ3XYICL1a-ghcXSEdsCks5WxTz0wA%3D%3D"></a>
+        </div>
+      </div>
+      <a class="ui icon button huge next-button"><i class="icon arrow circle outline right"></i></a>
+    </div>
+    <div class="static-button">
+      <a href="https://www.facebook.com">
+      <div class="ui animated button huge" tabindex="0">
+        <div class="visible content">Facebook</div>
+        <div class="hidden content">
+          <i class="facebook square icon"></i>
+        </div>
+      </div>
+      <a href="https://www.twitter.com">
+      <div class="ui animated button huge" tabindex="0">
+        <div class="visible content">Twitter</div>
+        <div class="hidden content">
+          <i class="twitter icon"></i>
+        </div>
+      </div>
+      <a href="https://www.instagram.com/">
+      <div class="ui animated button huge" tabindex="0">
+        <div class="visible content">Instagram</div>
+        <div class="hidden content">
+          <i class="instagram icon"></i>
+        </div>
+      </div>
+      <a href="https://www.linkedin.com">
+      <div class="ui animated button huge" tabindex="0">
+        <div class="visible content">LinkedIn</div>
+        <div class="hidden content">
+          <i class="linkedin square icon"></i>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+    <script>
+      var slideshow = $('#portfolio-pic .ui.shape').shape();
+      $('#portfolio-pic .back-button').click(function() {
+        slideshow.shape('flip left');
+      });
+      $('#portfolio-pic .next-button').click(function() {
+        slideshow.shape('flip right');
+      });
+    </script>
+  </body>
+</html>
